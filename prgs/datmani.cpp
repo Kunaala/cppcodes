@@ -8,6 +8,6 @@ int main()
     cout<<ceil(x)<<":"<<ceil(y)<<endl;
     cout<<trunc(x)<<endl;
     cout<<round(x)<<":"<<round(y)<<endl;
-
+    cout<<
     return 0;
 }
