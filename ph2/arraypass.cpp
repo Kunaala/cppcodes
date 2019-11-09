@@ -8,7 +8,7 @@ int main()
 {
     int arr[10]={0},*p;
     int arr2[2][3]={{1,2,3},{4,5,6}};
-    p=arr;
+    p=arr;//array pointer assignment
     arr[0]=2;
     printfn(arr);
     std::cout<<arr2[1][3]<<std::endl;
