@@ -1,10 +1,10 @@
-# 1 "/home/kunaala/gitcpp/udemy/biblicalfn.cpp"
+# 1 "/home/kunaala/gitcpp/udemy/classesdir/Student.cpp"
 # 1 "/usr/bin//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
-# 1 "/home/kunaala/gitcpp/udemy/biblicalfn.cpp"
+# 1 "/home/kunaala/gitcpp/udemy/classesdir/Student.cpp"
 # 1 "/usr/include/c++/7/iostream" 1 3
 # 36 "/usr/include/c++/7/iostream" 3
        
@@ -28158,49 +28158,36 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 2 "/home/kunaala/gitcpp/udemy/biblicalfn.cpp" 2
-# 1 "/home/kunaala/gitcpp/udemy/biblicalfn.hpp" 1
+# 2 "/home/kunaala/gitcpp/udemy/classesdir/Student.cpp" 2
+# 1 "/home/kunaala/gitcpp/udemy/classesdir/Student.hpp" 1
 
 
 
 
-# 4 "/home/kunaala/gitcpp/udemy/biblicalfn.hpp"
-int inputfunc();
-# 3 "/home/kunaala/gitcpp/udemy/biblicalfn.cpp" 2
-# 38 "/home/kunaala/gitcpp/udemy/biblicalfn.cpp"
-void printoptions()
+
+
+# 6 "/home/kunaala/gitcpp/udemy/classesdir/Student.hpp"
+class Student{
+    public:
+        int assignregno();
+        std::string inputname();
+    private:
+        int regno=1;
+
+};
+# 3 "/home/kunaala/gitcpp/udemy/classesdir/Student.cpp" 2
+int counter=1;
+int Student::assignregno()
 {
-
-    int op;
-    op = inputfunc();
-    switch (op)
-    {
-        case 1:
-            std::cout<<"you have \"1\" life\n";
-            break;
-        case 2:
-            std::cout<<"Life is about a  \"2nd\" chance\n";
-            break;
-        case 3:
-            std::cout<<"Believe in the \"Tri\"nity\n";
-            break;
-        case 4:
-            std::cout<<"Beware of the \"4th\" horsemen\n";
-            break;
-        default:
-            std::cout<<"nothing creates a possibility of everything\n";
-    }
-}
-int inputfunc()
-{
-    std::cout<<"enter your option 1 or 2 or 3 or 4\n";
-    int op;
-    std::cin>>op;
-    return op;
+    regno=counter;
+    return regno;
+    counter++;
 }
 
-int main()
+std::string Student::inputname()
 {
-
-    printoptions();
+    std::string name;
+    std::cout<<"enter the Student's name >\n";
+    std::cin>>name;
+    return name;
 }
