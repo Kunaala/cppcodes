@@ -2,9 +2,16 @@
 #ifndef ENTRY_H_
 #define ENTRY_H_
 class Entry{
+    
     public:
-        std::string* input();
+        static int regno;       //To demonstrate use of static variables
+   
+        Entry();
+        Entry(int start);
+        void input();
         int n;
+
+        
         int *pAge=NULL;
         std::string *pName=NULL;
 
